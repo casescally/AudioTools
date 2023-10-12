@@ -21,7 +21,6 @@ Its suggested that you run this with a rather long file as it will get truncated
 3. Click "Run" to process the audio.
 5. Once finished, the message will change to "FINISHED," and a link to the generated WAV file will appear.
 6. Click the link to open the newly generated WAV file in Finder*
-
 * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 """
 
