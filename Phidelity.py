@@ -21,6 +21,7 @@ Its suggested that you run this with a rather long file as it will get truncated
 3. Click "Run" to process the audio.
 5. Once finished, the message will change to "FINISHED," and a link to the generated WAV file will appear.
 6. Click the link to open the newly generated WAV file in Finder*
+
 * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 """
 
@@ -175,6 +176,8 @@ class PhidelityApp:
             self.statusLabel.config(text=str(e))
 
     def openFileInFinder(self):
+        # TODO: This isn't working correctly, it cannot seem to find the location of the file...
+        #  The file still gets created even though an error is risen.
         # Opens the generated WAV file in Finder.
         outputFilename = self.outputEntry.get() or "output"
         outputFilePath = os.path.join(os.path.dirname(self.filePathEntry.get()), f"{outputFilename}.wav")
@@ -186,4 +189,6 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = PhidelityApp(root)
     root.mainloop()
+
+
 
